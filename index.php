@@ -1,0 +1,233 @@
+<?php get_header() ?>
+
+  <header class="home-header">
+    <div class="row u-margin-bottom-zero-tab-port">
+      <div class="col-2-of-3">
+        <h1 class="heading-secondary u-margin-bottom-small">
+          Observatório de Mobilidade Urbana UFSC
+        </h1>
+        <p class="u-margin-bottom-medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perspiciatis, esse doloribus! Quidem saepe numquam suscipit
+          recusandae repudiandae corrupti rem itaque consequuntur obcaecati
+          harum quaerat, officia assumenda a non voluptatum deleniti nobis id
+          hic error sit aperiam. Saepe distinctio illum, voluptatum
+          necessitatibus nostrum esse consequuntur suscipit earum quae
+          corporis cumque nihil.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1-of-3">
+        <p class="lead-text--secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+          voluptatibus quam numquam. Optio perspiciatis reiciendis natus
+          fugiat consequatur numquam.
+        </p>
+        <a href="#" class="btn btn--primary-outline">Saiba mais sobre o observatório</a>
+      </div>
+      <div class="col-1-of-3">
+        <p class="lead-text--secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+          voluptatibus quam numquam. Optio perspiciatis reiciendis natus
+          fugiat consequatur numquam.
+        </p>
+        <a href="#" class="btn btn--primary-outline">Conheça nossa biblioteca</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-main" role="main">
+    <section class="section-events">
+      <div class="row">
+        <div class="events">
+          <div class="events__left">
+            <h2 class="heading-secondary">Próximos Eventos</h2>
+            <p class="lead-text--primary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Deleniti velit sed repudiandae laudantium.
+            </p>
+            <p class="lead-text--secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Perferendis, recusandae. Quo, aliquam voluptatibus deleniti
+              facilis nesciunt maiores tempore tenetur magni voluptatem omnis,
+              amet cupiditate mollitia hic temporibus natus itaque consequatur
+              necessitatibus, suscipit incidunt! Quaeratide vel earum
+              doloremque optio nihil error.
+            </p>
+          </div>
+          <div class="events__right">
+            <ul class="events-list">
+              <span class="events-list--arrow"><i class="fas fa-arrow-up"></i></span>
+
+              <li class="events-list__item">
+                <p class="events-list__date">
+                  <span class="events-list__date--day"> 29/09 </span>
+                  <span class="events-list__date--year"> 2018 </span>
+                </p>
+                <div class="events-list__description lead-text--secondary">
+                  <p class="events-list__description--text">
+                    Lorem ipsum dolor sit, amet consectetur!
+                  </p>
+                  <a href="#" class="events-list__description--btn btn btn--primary-outline">Saiba Mais</a>
+                </div>
+              </li>
+
+              <li class="events-list__item">
+                <p class="events-list__date">
+                  <span class="events-list__date--day"> 14/12 </span>
+                  <span class="events-list__date--year"> 2018 </span>
+                </p>
+                <div class="events-list__description lead-text--secondary">
+                  <p class="events-list__description--text">
+                    Lorem ipsum dolor sit, amet consectetur!
+                  </p>
+                  <a href="#" class="events-list__description--btn btn btn--primary-outline">Saiba Mais</a>
+                </div>
+              </li>
+
+              <li class="events-list__item">
+                <p class="events-list__date">
+                  <span class="events-list__date--day"> 09/01 </span>
+                  <span class="events-list__date--year"> 2018 </span>
+                </p>
+                <div class="events-list__description lead-text--secondary">
+                  <p class="events-list__description--text">
+                    Lorem ipsum dolor sit, amet consectetur!
+                  </p>
+                  <a href="#" class="events-list__description--btn btn btn--primary-outline">Saiba Mais</a>
+                </div>
+              </li>
+
+              <li class="events-list__item">
+                <p class="events-list__date">
+                  <span class="events-list__date--day"> 30/03 </span>
+                  <span class="events-list__date--year"> 2018 </span>
+                </p>
+                <div class="events-list__description lead-text--secondary">
+                  <p class="events-list__description--text">
+                    Lorem ipsum dolor sit, amet consectetur!
+                  </p>
+                  <a href="#" class="events-list__description--btn btn btn--primary-outline">Saiba Mais</a>
+                </div>
+              </li>
+
+              <span class="events-list--arrow"><i class="fas fa-arrow-down"></i></span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-news">
+      <div class="row">
+        <div class="col-2-of-3">
+          <h3 class="heading-tertiary u-text-white u-margin-bottom-small">
+            Acompanhe nossas últimas notícias
+          </h3>
+          <p class="lead-text--primary u-text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem
+            excepturi cumque a, deserunt distinctio laborum placeat nam earum
+            at, quisquam eos!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="news-card__carousel">
+          <i class="fas fa-angle-left"></i>
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="news-card news-card--1">
+                <a href="./subpages/noticias.html" class="u-no-decoration">
+                  <h4 class="heading-quartiary u-text-orange">
+                    Excepteur sint occaeat cupididate non proident sunt in
+                    culpa.
+                  </h4>
+                </a>
+                <p class="lead-text--secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quia, accusantium a doloremque consectetur consequuntur cum
+                  veniam libero animi explicabo et eaque.
+                </p>
+                <p class="news-card__footer lead-text--secondary u-text-orange">
+                  <span>
+                    <small>
+                      <i class="fas fa-clock"></i> 09/01/2018 - 14:35
+                    </small>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="news-card news-card--2">
+                <a href="./subpages/noticias.html" class="u-no-decoration">
+                  <h4 class="heading-quartiary u-text-primary-light">
+                    Excepteur sint occaeat cupididate non proident sunt in
+                    culpa.
+                  </h4>
+                </a>
+                <p class="lead-text--secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quia, accusantium a doloremque consectetur consequuntur cum
+                  veniam libero animi explicabo et eaque.
+                </p>
+                <p class="news-card__footer lead-text--secondary u-text-primary-light">
+                  <span>
+                    <small>
+                      <i class="fas fa-clock"></i> 09/01/2018 - 14:35
+                    </small>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="news-card news-card--3">
+                <a href="./subpages/noticias.html" class="u-no-decoration">
+                  <h4 class="heading-quartiary u-text-purple">
+                    Excepteur sint occaeat cupididate non proident sunt in
+                    culpa.
+                  </h4>
+                </a>
+                <p class="lead-text--secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quia, accusantium a doloremque consectetur consequuntur cum
+                  veniam libero animi explicabo et eaque.
+                </p>
+                <p class="news-card__footer lead-text--secondary u-text-purple">
+                  <span>
+                    <small>
+                      <i class="fas fa-clock"></i> 09/01/2018 - 14:35
+                    </small>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section-more">
+    <div class="row">
+      <div class="col-2-of-3 u-margin-bottom-zero-tab-port">
+        <h3 class="heading-tertiary u-margin-bottom-xbig">
+          Saiba mais sobre o projeto de Transporte Integrado Metropolitano
+        </h3>
+        <p class="lead-text--primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur similique mollitia excepturi
+          molestias magnam dolores nemo in. Debitis, dolor!
+        </p>
+        <a href="#" class="btn btn--primary-outline">
+          Veja os mapas do novo sistema
+        </a>
+      </div>
+      <div class="col-1-of-3">
+        <img class="section-more__image" src="<?php echo get_template_directory_uri() . '/img/preview-mapas.png' ?>">
+      </div>
+    </div>
+  </section>
+
+<?php get_footer() ?>
