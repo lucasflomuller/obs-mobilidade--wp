@@ -34,4 +34,11 @@
         </ul>
       </div>
     </div>
+    <section class="menu-area">
+      <div class="container">
+        <div class="row">
+          <nav class="menu col-md-10 text-right"><?php wp_nav_menu( array('theme_location' => 'my_main_menu')); ?></nav>
+        </div>
+      </div>
+    </section>
   </nav>

@@ -11,5 +11,14 @@ function load_scripts(){
   // loading template styles
   wp_enqueue_style( 'template', get_template_directory_uri() . '/css/template.css', array('font-awesome'), '1.0', 'all' );
 }
+
+// Menus
+register_nav_menus(
+	array(
+		'my_main_menu' => 'Main Menu'
+
+	)
+);
+
 // Adding to queue
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
