@@ -33,7 +33,7 @@
 
     <div class="row gutter-xsmall">
       <div class="news-card news-card--2 u-padding-medium">
-        <a href="subpages/publicacoes/downloads.html" class="u-no-decoration">
+        <a href="subpages/publicacoes/single-downloads.php" class="u-no-decoration">
           <h4 class="heading-quartiary u-text-primary-light u-margin-bottom-small">
             Publicações
           </h4>

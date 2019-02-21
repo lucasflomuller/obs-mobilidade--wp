@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
   <header class="home-header">
     <div class="row u-margin-bottom-zero-tab-port">
@@ -141,4 +141,4 @@
     </div>
   </section>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
