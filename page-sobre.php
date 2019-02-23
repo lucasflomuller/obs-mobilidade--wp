@@ -667,7 +667,7 @@
 
       <div class="col-1-of-3">
 
-        <img src="img/imagem-preview-publicacoes.svg" class="section-articles__image">
+        <img src="<?php echo get_template_directory_uri() . '/img/imagem-preview-publicacoes.svg' ?>" class="section-articles__image">
 
       </div>
     </div>
