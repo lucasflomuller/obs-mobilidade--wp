@@ -17,28 +17,25 @@
       <div class="navigation__logo">
         &nbsp;
       </div>
-      <div class="navigation__collapse">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link active">Home</a></li>
-          <li class="navigation__item"><a href="sobre.html" class="navigation__link">Sobre</a></li>
-          <li class="navigation__item"><a href="publicacoes.html" class="navigation__link">Publicações</a></li>
-          <form class="navigation__form">
-            <div class="search-bar">
-              <input id="search-bar" type="text" placeholder="Pesquisar no site" class="search-bar__input">
-              <label for="search-bar" class="search-bar__label">Pesquisar no Site:</label>
-              <button class="search-bar__button">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-          </form>
-        </ul>
-      </div>
-    </div>
-    <section class="menu-area">
-      <div class="container">
-        <div class="row">
-          <nav class="menu col-md-10 text-right"><?php wp_nav_menu( array('theme_location' => 'my_main_menu')); ?></nav>
+        <div class="navigation__collapse">
+          <ul class="navigation__list">
+            <form class="navigation__form">
+              <div class="search-bar">
+                <input id="search-bar" type="text" placeholder="Pesquisar no site" class="search-bar__input">
+                <label for="search-bar" class="search-bar__label">Pesquisar no Site:</label>
+                <button class="search-bar__button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </ul>
         </div>
-      </div>
-    </section>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'my_main_menu',
+          'container' => 'div',
+          'container_class' => 'navigation__collapse',
+          'menu-class' => 'navigation__list',
+          'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
+        )); ?>
+    </div>
   </nav>

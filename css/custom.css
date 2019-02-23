@@ -1,0 +1,4 @@
+/* Setting css to active menu item */
+.current-menu-item {
+  color: #067fda !important;
+}
