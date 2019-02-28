@@ -2,3 +2,7 @@
 .current-menu-item {
   color: #067fda !important;
 }
+
+.navigation {
+  position: relative;
+}
