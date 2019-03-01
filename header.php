@@ -29,13 +29,13 @@
               </div>
             </form>
           </ul>
-        </div>
-        <?php wp_nav_menu( array(
-          'theme_location' => 'my_main_menu',
-          'container' => 'div',
-          'container_class' => 'navigation__collapse',
-          'menu-class' => 'navigation__list',
-          'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
-        )); ?>
+          <?php wp_nav_menu( array(
+            'theme_location' => 'my_main_menu',
+            'container' => 'div',
+            'container_class' => '',
+            'menu-class' => 'navigation__list',
+            'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
+          )); ?>
+          </div>
     </div>
   </nav>

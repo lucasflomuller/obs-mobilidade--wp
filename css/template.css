@@ -945,12 +945,19 @@ body {
     height: 5rem;
     background-image: url(../img/brand/logo-menu.svg);
     background-size: 100%; }
+    @media (max-width: 56.25em) {
+      .navigation__logo {
+        display: block;
+        float: none; } }
     @media (max-width: 20.62em) {
       .navigation__logo {
         display: none; } }
   .navigation__collapse {
     float: right;
     margin-top: .7rem; }
+    @media (max-width: 56.25em) {
+      .navigation__collapse {
+        float: none; } }
   .navigation__list {
     list-style-type: none; }
   .navigation__item {
@@ -958,9 +965,10 @@ body {
     padding-top: 1rem; }
     .navigation__item:not(:last-child) {
       margin-right: 2rem; }
-      @media (max-width: 56.25em) {
-        .navigation__item:not(:last-child) {
-          margin-right: .5rem; } }
+    @media (max-width: 56.25em) {
+      .navigation__item {
+        display: block;
+        text-align: center; } }
   .navigation__link.active {
     color: #067fda !important; }
   .navigation__link, .navigation__link:link, .navigation__link:active {
