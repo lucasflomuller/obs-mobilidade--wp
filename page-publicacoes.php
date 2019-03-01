@@ -17,14 +17,12 @@
 
   <section class="section-categories">
     <?php
-      $news = new WP_Query( 'post_type=post&posts_per_page=3&cat=3,4,5' );
+      $news = new WP_Query( 'post_type=post&posts_per_page=3&category_name=downloads,noticias,projetos' );
       if ($news->have_posts()):
         while($news->have_posts()): $news->the_post();
       ?>
-      <div class="col-12">
-        <?php get_template_part( 'template-parts/content', 'posts' ); ?>
-      </div>      
-        <?php
+      <?php get_template_part( 'template-parts/content', 'publicacoes' ); ?>     
+      <?php
         endwhile;
         wp_reset_postdata();
       endif;
