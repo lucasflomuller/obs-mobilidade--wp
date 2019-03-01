@@ -16,49 +16,19 @@
   </header>
 
   <section class="section-categories">
-
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--1 u-padding-medium">
-        <a href="#" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-orange u-margin-bottom-small">
-            Projetos
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
-
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--2 u-padding-medium">
-        <a href="subpages/publicacoes/single-downloads.php" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-primary-light u-margin-bottom-small">
-            Publicações
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
-
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--4 u-padding-medium">
-        <a href="#" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-green u-margin-bottom-small">
-            Clipping
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
-
+    <?php
+      $news = new WP_Query( 'post_type=post&posts_per_page=3&cat=3,4,5' );
+      if ($news->have_posts()):
+        while($news->have_posts()): $news->the_post();
+      ?>
+      <div class="col-12">
+        <?php get_template_part( 'template-parts/content', 'posts' ); ?>
+      </div>      
+        <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+    ?>
   </section>
 
 <?php get_footer(); ?>
