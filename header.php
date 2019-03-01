@@ -18,6 +18,13 @@
         &nbsp;
       </div>
         <div class="navigation__collapse">
+          <?php wp_nav_menu( array(
+            'theme_location' => 'my_main_menu',
+            'container' => '',
+            'container_class' => '',
+            'menu-class' => 'navigation__list',
+            'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
+          )); ?>
           <ul class="navigation__list">
             <form class="navigation__form">
               <div class="search-bar">
@@ -29,13 +36,6 @@
               </div>
             </form>
           </ul>
-          <?php wp_nav_menu( array(
-            'theme_location' => 'my_main_menu',
-            'container' => 'div',
-            'container_class' => '',
-            'menu-class' => 'navigation__list',
-            'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
-          )); ?>
-          </div>
+        </div>
     </div>
   </nav>

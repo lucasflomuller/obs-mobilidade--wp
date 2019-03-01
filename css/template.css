@@ -952,7 +952,8 @@ body {
     float: right;
     margin-top: .7rem; }
   .navigation__list {
-    list-style-type: none; }
+    list-style-type: none;
+    display: inline-block; }
   .navigation__item {
     display: inline-block;
     padding-top: 1rem; }
