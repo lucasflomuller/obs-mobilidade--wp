@@ -458,7 +458,6 @@ body {
   padding: 2.5rem 3rem;
   position: relative;
   border-radius: .4rem;
-  outline-offset: .6rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.07);
   background-color: #fff;
   text-align: center;
@@ -475,7 +474,6 @@ body {
       width: 100%; } }
   .team-card:hover {
     box-shadow: 0 2rem 3.3rem rgba(0, 0, 0, 0.1);
-    outline: 2px solid #067fda;
     transform: translateY(-0.5rem); }
     @media (max-width: 75em) {
       .team-card:hover {
@@ -905,7 +903,7 @@ body {
       .footer__partners ul li:first-child {
         margin-bottom: 1rem; }
     .footer__partners--image {
-      margin-top: -1rem; }
+      width: 86%; }
       @media (max-width: 37.5em) {
         .footer__partners--image {
           display: none; } }
