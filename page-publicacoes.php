@@ -17,47 +17,27 @@
 
   <section class="section-categories">
 
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--1 u-padding-medium">
-        <a href="#" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-orange u-margin-bottom-small">
-            Projetos
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
+  <?php 
 
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--2 u-padding-medium">
-        <a href="subpages/publicacoes/single-downloads.php" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-primary-light u-margin-bottom-small">
-            Publicações
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_parge' => '4',
+      'category_name' => 'publicacoes'
+    );
 
-    <div class="row gutter-xsmall">
-      <div class="news-card news-card--4 u-padding-medium">
-        <a href="#" class="u-no-decoration">
-          <h4 class="heading-quartiary u-text-green u-margin-bottom-small">
-            Clipping
-          </h4>
-        </a>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat nam aliquam dolorem earum
-          tempore iste quia porro distinctio fuga dicta cumque, pariatur perferendis?
-        </p>
-      </div>
-    </div>
+    $publicacoes = new WP_Query($args);
+
+    if ($publicacoes->have_posts()):
+      while($publicacoes->have_posts()): $publicacoes->the_post();
+      ?>
+
+      <?php get_template_part( 'template-parts/content', 'publicacoes' ); ?>
+    
+      <?php 
+      endwhile;
+      wp_reset_postdata();
+    endif;
+    ?>
 
   </section>
 
