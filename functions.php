@@ -32,3 +32,10 @@ function add_specific_menu_class_atts( $atts, $item, $args ) {
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_menu_class_atts', 10, 3 );
+
+// Filter except length to 35 words.
+// tn custom excerpt length
+function tn_custom_excerpt_length( $length ) {
+  return 35;
+}
+add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
