@@ -19,12 +19,15 @@
 
             $news = new WP_Query( 'post_type=post&posts_per_page=3&category_name=noticias' );
 
+
             if ($news->have_posts()):
               while($news->have_posts()): $news->the_post();
               ?>
                 <div class="col-1-of-3">
+
                   <?php get_template_part( 'template-parts/content', 'news' ); ?>
-                </div>      
+
+                </div>   
               <?php
               endwhile;
               wp_reset_postdata();
