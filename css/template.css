@@ -405,11 +405,11 @@ body {
 .news-card {
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.96);
-  padding: 1.6rem 3rem .5rem 3rem;
+  padding: 1.6rem 3rem 0.5rem 3rem;
   border-bottom: 4px solid rgba(0, 0, 0, 0.9);
   border-bottom-color: #ec640e;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
-  transition: .2s; }
+  transition: 0.2s; }
   .news-card:hover {
     transform: translateY(-1.4rem) scale(1.05);
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15); }
@@ -429,9 +429,11 @@ body {
     height: auto; }
     .news-card__carousel > i {
       color: #fff;
+      width: 1rem;
+      height: 1rem;
       font-size: 2rem;
       position: absolute;
-      transition: .2s;
+      transition: 0.2s;
       cursor: pointer; }
       .news-card__carousel > i:first-of-type {
         top: 50%;
@@ -452,13 +454,18 @@ body {
     display: flex;
     overflow: hidden;
     padding: 4rem; }
-    .news-card__carousel-container > * {
+    .news-card__carousel-container > .news-card {
       flex: 0 0 30%;
       margin-right: 5%; }
       @media (max-width: 75em) {
-        .news-card__carousel-container > * {
+        .news-card__carousel-container > .news-card {
           margin-right: 0;
           margin-bottom: 5%; } }
+    .news-card__carousel-container--scrolled > .news-card {
+      transform: translateX(-360%);
+      transition: all 1s ease-in-out; }
+      .news-card__carousel-container--scrolled > .news-card:hover {
+        transform: translateX(-360%) translateY(-1.4rem) scale(1.05); }
     @media (max-width: 75em) {
       .news-card__carousel-container {
         flex-flow: column; } }

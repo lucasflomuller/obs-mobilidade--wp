@@ -13,9 +13,9 @@
   </div>
   <div class="row">
     <div class="news-card__carousel">
-      <i class="fas fa-angle-left"></i>
+      <i class="fas fa-angle-left" id="newsCarouselLeft"></i>
       <div class="row">
-        <div class="news-card__carousel-container">
+        <div class="news-card__carousel-container" id="newsCardCarouselContainer">
           <?php
 
             $news = new WP_Query( 'post_type=post&posts_per_page=6  &category_name=noticias' );
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <i class="fas fa-angle-right"></i>
+      <i class="fas fa-angle-right" id="newsCarouselRight"></i>
     </div>
   </div>
 </div>
