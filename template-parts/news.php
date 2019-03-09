@@ -17,7 +17,7 @@
       <div class="row">
           <?php
 
-            $news = new WP_Query( 'post_type=post&posts_per_page=3&category_name=noticias' );
+            $news = new WP_Query( 'post_type=post&posts_per_page=3' );
 
             if ($news->have_posts()):
               while($news->have_posts()): $news->the_post();

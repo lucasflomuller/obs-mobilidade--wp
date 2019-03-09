@@ -1,7 +1,7 @@
 <!-- PROJECT CARD INIT -->
 <div class="project-card project-card--2">
-        <input id="project2" type="checkbox" class="project-card__checkbox">
-        <label for="project2" class="project-card__more-button u-text-orange">Saiba mais <i class="fas fa-angle-down"></i></label>
+        <input id="<?php echo get_the_ID(); ?>"   type="checkbox" class="project-card__checkbox">
+        <label for="<?php echo get_the_ID(); ?>" class="project-card__more-button u-text-orange">Saiba mais <i class="fas fa-angle-down"></i></label>
 
         <div class="project-card__head-left">
           <h2 class="heading-tertiary u-text-orange">
