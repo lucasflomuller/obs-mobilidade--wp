@@ -39,3 +39,69 @@ function tn_custom_excerpt_length( $length ) {
   return 35;
 }
 add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
+
+function faba_equipe_column_headers($columns) {
+
+  //crating custom column header data
+
+  $columns = array(
+    'cb'=>'<input type="checkbox"/>',
+    'title'=>__("Nome"),
+    'profissao'=>__('Profissão'),
+    'funcao'=>__('Função'),
+    'curriculo'=>__('Currículo')
+  );
+  // returning new columns
+ return $columns;
+}
+
+add_filter('manage_edit-equipe_columns', 'faba_equipe_column_headers');
+
+function faba_equipe_columns_data( $column, $post_id ) {
+  // setup our return text
+
+  $output = '';
+
+  switch ( $column ) {
+    case 'title':
+      //get the custom name data
+    
+      $fname = get_field('equipe_name', $post_id);
+
+      $output = $fname;
+
+      break;
+
+      case 'profissao':
+      //get the custom name datay
+    
+      $profissao = get_field('profissao', $post_id);
+
+      $output = $profissao;
+
+      break;
+
+      case 'funcao':
+      //get the custom name data
+    
+      $funcao = get_field('funcao', $post_id);
+
+      $output = $funcao;
+
+      break;
+
+      case 'curriculo':
+      //get the custom name data
+    
+      $curriculo = get_field('curriculo', $post_id);
+
+      $output = $curriculo;
+
+      break;
+  }
+  //echo the outuput
+
+  echo $output;
+}
+
+add_filter('manage_equipe_posts_custom-column', 'faba_equipe_column-data',1,2);
