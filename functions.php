@@ -66,7 +66,7 @@ function faba_equipe_column_data( $column, $post_id ) {
     case 'title':
       //get the custom name data
     
-      $fname = get_field('equipe_name', $post_id);
+      $fname = get_field('nome', $post_id);
 
       $output .= $fname;
 
@@ -114,7 +114,7 @@ function faba_custom_admin_titles( $title, $post_id ) {
   if( isset($post->post_type) ):
     switch( $post->post_type ) {
        case 'equipe':
-          $fname = get_field('equipe_name', $post_id );
+          $fname = get_field('nome', $post_id );
           $output = $fname;
           break;
     }
