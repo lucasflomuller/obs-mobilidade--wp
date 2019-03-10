@@ -3,8 +3,7 @@
     <h4 class="heading-quartiary u-text-orange">
 
     </h4>
-  </a> 
-
+  </a>
   <p class="lead-text--secondary">
     <?php echo get_the_excerpt(); ?>
   </p>

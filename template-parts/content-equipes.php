@@ -1,7 +1,7 @@
 <div class="col-1-of-4">
         <div class="team-card">
           <h4 class="heading-quinary">
-             <?php get_field('nome', $post_id ) ?>
+          <?php the_title(); ?>
           </h4>
           <p class="lead-text--secondary team-card__occupation--1">
             Professor do Departamento de Ciências da Administração da UFSC

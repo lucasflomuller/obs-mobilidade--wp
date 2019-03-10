@@ -26,15 +26,7 @@
             'items_wrap' => '<ul class="navigation__list">%3$s</ul>'
           )); ?>
           <ul class="navigation__list">
-            <form class="navigation__form">
-              <div class="search-bar">
-                <input id="search-bar" type="text" placeholder="Pesquisar no site" class="search-bar__input">
-                <label for="search-bar" class="search-bar__label">Pesquisar no Site:</label>
-                <button class="search-bar__button">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </form>
+          <?php get_search_form(); ?>
           </ul>
         </div>
     </div>
