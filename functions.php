@@ -57,7 +57,7 @@ function faba_equipe_column_headers($columns) {
 
 add_filter('manage_edit-equipe_columns', 'faba_equipe_column_headers');
 
-function faba_equipe_columns_data( $column, $post_id ) {
+function faba_equipe_column_data( $column, $post_id ) {
   // setup our return text
 
   $output = '';
@@ -104,4 +104,4 @@ function faba_equipe_columns_data( $column, $post_id ) {
   echo $output;
 }
 
-add_filter('manage_equipe_posts_custom-column', 'faba_equipe_columns_data',1,2);
+add_filter('manage_equipe_posts_custom-column', 'faba_equipe_column_data',1,2);
