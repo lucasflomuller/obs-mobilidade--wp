@@ -18,7 +18,5 @@
           endif;
 
         ?>
-
-    
     </div>
-  </section>
+</section>

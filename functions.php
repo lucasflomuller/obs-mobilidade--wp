@@ -95,6 +95,7 @@ function faba_equipe_column_data( $column, $post_id ) {
     
       $curriculo = get_field('curriculo', $post_id);
 
+
       $output .= $curriculo;
 
       break;
