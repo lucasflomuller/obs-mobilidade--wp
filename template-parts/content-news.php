@@ -1,7 +1,7 @@
-<div class="news-card news-card--1">
+<article class="news-card">
   <a href="<?php the_permalink(); ?>" class="u-no-decoration">
-    <h4 class="heading-quartiary u-text-orange">
-
+    <h4 class="heading-quartiary">
+      <?php the_title(); ?>
     </h4>
   </a>
   <p class="lead-text--secondary">
