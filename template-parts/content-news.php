@@ -1,10 +1,7 @@
-
-
-
 <div class="news-card news-card--1">
   <a href="<?php the_permalink(); ?>" class="u-no-decoration">
     <h4 class="heading-quartiary u-text-orange">
-      <?php the_title(); ?>
+
     </h4>
   </a> 
 

@@ -105,3 +105,21 @@ function faba_equipe_columns_data( $column, $post_id ) {
 }
 
 add_filter('manage_equipe_posts_custom-column', 'faba_equipe_column-data',1,2);
+
+function faba_custom_admin_titles( $title, $post_id ) {
+  global $post;
+
+  $output = $title;
+
+  if( isset($post->post_type) ):
+    switch( $post->post_type ) {
+       case 'equipe':
+          $fname = get_field('equipe_name', $post_id );
+          $output = $fname;
+          break;
+    }
+ endif;
+ return $output;
+}
+add_filter('the_title', 'faba_custom_admin_titles', 99, 2);
+
