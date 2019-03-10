@@ -68,7 +68,7 @@ function faba_equipe_columns_data( $column, $post_id ) {
     
       $fname = get_field('equipe_name', $post_id);
 
-      $output = $fname;
+      $output .= $fname;
 
       break;
 
@@ -77,7 +77,7 @@ function faba_equipe_columns_data( $column, $post_id ) {
     
       $profissao = get_field('profissao', $post_id);
 
-      $output = $profissao;
+      $output .= $profissao;
 
       break;
 
@@ -86,7 +86,7 @@ function faba_equipe_columns_data( $column, $post_id ) {
     
       $funcao = get_field('funcao', $post_id);
 
-      $output = $funcao;
+      $output .= $funcao;
 
       break;
 
@@ -95,7 +95,7 @@ function faba_equipe_columns_data( $column, $post_id ) {
     
       $curriculo = get_field('curriculo', $post_id);
 
-      $output = $curriculo;
+      $output .= $curriculo;
 
       break;
   }
