@@ -104,4 +104,4 @@ function faba_equipe_columns_data( $column, $post_id ) {
   echo $output;
 }
 
-add_filter('manage_equipe_posts_custom-column', 'faba_equipe_column-data',1,2);
+add_filter('manage_equipe_posts_custom-column', 'faba_equipe_columns_data',1,2);
