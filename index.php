@@ -6,7 +6,7 @@
       <h1 class="heading-secondary u-margin-bottom-small">
         Observatório de Mobilidade Urbana UFSC
       </h1>
-      <p class="u-margin-bottom-medium">
+      <p class="u-margin-bottom-big">
       Bem-vindo(a) à página do Observatório da Mobilidade Urbana UFSC. Somos um grupo aberto, destinado à
       pesquisa e estudos sobre mobilidade urbana regional, com foco no transporte público coletivo e em formas
       sustentáveis de locomoção nas cidades.
