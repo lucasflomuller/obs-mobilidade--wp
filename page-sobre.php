@@ -7,16 +7,17 @@
           Sobre o Observatório
         </h1>
         <p class="u-margin-bottom-small">
-          Uma entidade aberta à participação de professores, técnicos e estudantes interessados em temas relacionados à
-          mobilidade. O Observatório surgiu a partir do envolvimento de equipe da UFSC no projeto PLAMUS, desenvolvido
-          em 2014/2015, cujos resultados geraram diagnósticos e diretrizes sobre a estrutura da mobilidade na Região
-          Metropolitana da Grande Florianópolis (RMF).
+        O Observatório da Mobilidade Urbana da UFSC é uma entidade aberta à participação de professores, técnicos e 
+        estudantes interessados em temas relacionados à mobilidade. O Observatório surgiu a partir do envolvimento de 
+        equipe da UFSC no projeto PLAMUS, desenvolvido em 2014/2015, cujos resultados geraram diagnósticos e diretrizes
+        sobre a estrutura da mobilidade na região metropolitana da Grande Florianópolis (RMF).
         </p>
         <p>
-          Assim, a primeira missão do Observatório é acompanhar a evolução das políticas públicas na RMF na área de
-          mobilidade, à luz dos resultados do PLAMUS. Tal compromisso implica em uma missão maior: a promoção e
-          atualização de estudos/pesquisas, debates e projetos sobre o tema, com visão abrangente e referenciada nas
-          melhores experiências locais, nacionais e mundiais.
+        Assim, a primeira missão do Observatório é acompanhar a evolução das políticas públicas na RMF 
+        (Região Metropolitana de Florianópolis) na área de mobilidade, à luz do acervo de resultados do PLAMUS.
+          Porém, tal compromisso implica em uma missão maior: a promoção e atualização de estudos/pesquisas, 
+          debates e projetos sobre o tema da mobilidade urbana, com visão abrangente e referenciada nas melhores 
+          experiências locais, nacionais e mundiais no setor.
         </p>
       </div>
     </div>

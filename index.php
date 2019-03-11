@@ -7,30 +7,24 @@
         Observatório de Mobilidade Urbana UFSC
       </h1>
       <p class="u-margin-bottom-medium">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Perspiciatis, esse doloribus! Quidem saepe numquam suscipit
-        recusandae repudiandae corrupti rem itaque consequuntur obcaecati
-        harum quaerat, officia assumenda a non voluptatum deleniti nobis id
-        hic error sit aperiam. Saepe distinctio illum, voluptatum
-        necessitatibus nostrum esse consequuntur suscipit earum quae
-        corporis cumque nihil.
+      Bem-vindo(a) à página do Observatório da Mobilidade Urbana UFSC. Somos um grupo aberto, destinado à
+      pesquisa e estudos sobre mobilidade urbana regional, com foco no transporte público coletivo e em formas
+      sustentáveis de locomoção nas cidades.
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-1-of-3">
       <p class="lead-text--secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        voluptatibus quam numquam. Optio perspiciatis reiciendis natus
-        fugiat consequatur numquam.
+      Encontre aqui mais informações sobre a origem do Observatório, principais atividades desenvolvidas e dados
+      de contato.
       </p>
       <a href="#" class="btn btn--primary-outline">Saiba mais sobre o observatório</a>
     </div>
     <div class="col-1-of-3">
       <p class="lead-text--secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        voluptatibus quam numquam. Optio perspiciatis reiciendis natus
-        fugiat consequatur numquam.
+      Textos produzidos pela equipe do Observatório, consistindo de relatórios e dados de projetos, publicações
+      acadêmicas e artigos de opinião.
       </p>
       <a href="#" class="btn btn--primary-outline">Conheça nossa biblioteca</a>
     </div>
@@ -48,11 +42,14 @@
         Saiba mais sobre o projeto de Transporte Integrado Metropolitano
       </h3>
       <p class="lead-text--primary">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur similique mollitia excepturi
-        molestias magnam dolores nemo in. Debitis, dolor!
+      Desde 2014 pesquisadores da UFSC participam do processo de reestruturação do transporte coletivo
+da região metropolitana da Grande Florianópolis, contribuindo com o Plano de Mobilidade Urbana
+Sustentável da Grande Florianópolis (PLAMUS). Em 2016, o grupo decidiu criar o Observatório da
+Mobilidade Urbana que, em parceria com Governo do Estado e prefeituras, desenvolveu a proposta
+da Rede Integrada de Transporte Coletivo Metropolitano.
       </p>
-      <a href="#" class="btn btn--primary-outline">
-        Veja os mapas do novo sistema
+      <a href="https://onibusrmf.org" class="btn btn--primary-outline">
+      Conheça o novo sistema
       </a>
     </div>
     <div class="col-1-of-3">

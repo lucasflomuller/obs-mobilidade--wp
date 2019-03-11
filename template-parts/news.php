@@ -5,9 +5,8 @@
         Acompanhe nossas últimas notícias
       </h3>
       <p class="lead-text--primary u-text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem
-        excepturi cumque a, deserunt distinctio laborum placeat nam earum
-        at, quisquam eos!
+      Encontre aqui notícias relacionadas à estudos, pesquisas, debates e projetos sobre o tema da
+      mobilidade urbana.
       </p>
     </div>
   </div>

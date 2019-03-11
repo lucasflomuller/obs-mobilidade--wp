@@ -7,9 +7,7 @@
           Publicações
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab, ut quas quaerat optio voluptate rerum
-          maiores quasi laboriosam consequuntur, enim porro dolorum, voluptas laudantium tempore? Esse hic soluta
-          repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita hic soluta.
+        Encontre aqui as publicações do Observatório, divididas nas categorias a seguir. 
         </p>
       </div>
     </div>

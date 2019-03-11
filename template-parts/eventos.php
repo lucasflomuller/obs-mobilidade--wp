@@ -4,18 +4,9 @@
       <div class="events__left">
         <h2 class="heading-secondary">Próximos Eventos</h2>
         <p class="lead-text--primary">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Deleniti velit sed repudiandae laudantium.
+        Confira os próximos eventos que ocorrerão sobre mobilidade urbana em nossa região.
         </p>
-        <p class="lead-text--secondary">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Perferendis, recusandae. Quo, aliquam voluptatibus deleniti
-          facilis nesciunt maiores tempore tenetur magni voluptatem omnis,
-          amet cupiditate mollitia hic temporibus natus itaque consequatur
-          necessitatibus, suscipit incidunt! Quaeratide vel earum
-          doloremque optio nihil error.
-        </p>
-      </div>
+        </div>
       <div class="events__right">
         <ul class="events-list">
           <!-- <span class="events-list--arrow"><i class="fas fa-arrow-up"></i></span> -->
