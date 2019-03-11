@@ -5,7 +5,7 @@
       </h3>
         <?php
 
-        $projects = new WP_Query ('post_type=post&posts_per_page=0&category_name=projetos');
+        $projects = new WP_Query ('post_type=projeto&posts_per_page=0');
 
         if ($projects->have_posts()):
             while($projects->have_posts()): $projects->the_post();

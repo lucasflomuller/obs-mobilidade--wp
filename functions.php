@@ -55,7 +55,7 @@ function faba_equipe_column_headers($columns) {
  return $columns;
 }
 
-add_filter('manage_edit-equipe_columns', 'faba_equipe_column_headers');
+add_filter('manage_edit-equipe_columns','faba_equipe_column_headers');
 
 function faba_equipe_column_data( $column, $post_id ) {
   // setup our return text
@@ -107,32 +107,12 @@ function faba_equipe_column_data( $column, $post_id ) {
 
 add_filter('manage_equipe_posts_custom-column', 'faba_equipe_column-data',1,2);
 
-function faba_custom_admin_titles( $title, $post_id ) {
-  global $post;
-
-  $output = $title;
-
-  if( isset($post->post_type) ):
-    switch( $post->post_type ) {
-       case 'equipe':
-          $fname = get_field('nome', $post_id );
-          $output = $fname;
-          break;
-       case 'projeto':
-          $fname = get_field ('title', $post_id)   ;
-          $output = $fname;
-          break;
-    }
- endif;
- return $output;
-}
-add_filter('the_title', 'faba_custom_admin_titles', 99, 2);
-
 function projeto_column_headers($columns){
 
   //creating custom column header data
   $columns = array(
     'cb'=>'<input type="checkbox"/>',
+    'title'=>__('Título'),
     'data_de_inicio'=>__('Data  de início'),
     'status'=>__('Status'),
     'coordenador'=>__('Coordenador'),
@@ -149,7 +129,12 @@ function projeto_column_data( $column, $post_id ) {
   // setup our return text
   $output = '';
   switch( $column ) {
-     
+     case 'title':
+        //get custom title name  data
+        $titulo = get_field('titulo', $post_id);
+        $output .= $titulo;
+        break;
+        
      case 'data_de_inicio':
         // get the custom name data
         $data_de_inicio = get_field('data_de_inicio', $post_id );
@@ -176,4 +161,27 @@ function projeto_column_data( $column, $post_id ) {
   echo $output;
 }
 add_filter('manage_projeto_posts_custom_column','projeto_column_data',1,2);
+
+
+
+function faba_custom_admin_titles( $title, $post_id ) {
+  global $post;
+
+  $output = $title;
+
+  if( isset($post->post_type) ):
+    switch( $post->post_type ) {
+       case 'equipe':
+          $fname = get_field('nome', $post_id );
+          $output = $fname;
+          break;
+       case 'projeto':
+          $fname = get_field ('titulo', $post_id)   ;
+          $output = $fname;
+          break;
+    }
+ endif;
+ return $output;
+}
+add_filter('the_title', 'faba_custom_admin_titles', 99, 2);
 

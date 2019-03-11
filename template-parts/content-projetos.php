@@ -5,17 +5,17 @@
 
         <div class="project-card__head-left">
           <h2 class="heading-tertiary u-text-orange">
-            <?php the_title(); ?>
+            <?php the_field('titulo'); ?>
 		  </h2>
         </div>
 
         <div class="project-card__head-right">
           <p class="lead-text--secondary">
-            <b>Início:</b> 2018 <br>
-            <b>Status:</b> Em andamento <br>
+            <b>Início:</b> <?php the_field('data_de_inicio') ?> <br>
+            <b>Status:</b> <?php the_field('status') ?> <br>
             <span>
-              <b>Coordernador:</b> PROF. WERNER KRAUS JUNIOR <br>
-              <b>Recursos:</b> FAPESC <br>
+              <b>Coordernador:</b> <?php the_field('coordenador') ?> <br>
+              <b>Recursos:</b> <?php the_field('recursos') ?> <br>
             </span>
           </p>
         </div>
@@ -24,7 +24,7 @@
 
         <div class="project-card__content">
           <p class="u-margin-bottom-small">
-            <?php the_content();     ?>
+            <?php the_field('conteudo');?>
           </p>
           
 
