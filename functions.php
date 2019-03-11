@@ -175,5 +175,5 @@ function projeto_column_data( $column, $post_id ) {
   // echo the output
   echo $output;
 }
-add_filter('manage_staff_posts_custom_column','faba_staff_column_data',1,2);
+add_filter('manage_projeto_posts_custom_column','projeto_column_data',1,2);
 
