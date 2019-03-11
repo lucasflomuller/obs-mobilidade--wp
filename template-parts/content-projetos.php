@@ -1,5 +1,5 @@
 <!-- PROJECT CARD INIT -->
-<div class="project-card project-card--2">
+<div class="project-card">
         <input id="<?php echo get_the_ID(); ?>"   type="checkbox" class="project-card__checkbox">
         <label for="<?php echo get_the_ID(); ?>" class="project-card__more-button u-text-orange">Saiba mais <i class="fas fa-angle-down"></i></label>
 
@@ -24,7 +24,7 @@
 
         <div class="project-card__content">
           <p class="u-margin-bottom-small">
-            <?php the_content();     ?>
+            <?php the_field('conteudo'); ?>
           </p>
           
 
@@ -39,14 +39,19 @@
               </h5>
               <hr class="team-card__hr team-card__hr--orange">
               <ul class="team-card__list">
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
+
+              <?php $professoresArray = explode(",", get_field('equipe_do_projeto')['professores']);
+
+                foreach ($professoresArray as $value) {
+              ?>
+
+                    <li class="team-card__item"><?php echo $value; ?></li>
+
+              <?php
+                }
+                unset($value); // break the reference with the last element
+              ?>
+
               </ul>
             </div>
           </div>
@@ -57,14 +62,19 @@
               </h5>
               <hr class="team-card__hr team-card__hr--orange">
               <ul class="team-card__list">
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
+
+              <?php $pesquisadoresArray = explode(",", get_field('equipe_do_projeto')['pesquisadores']);
+
+                foreach ($pesquisadoresArray as $value) {
+              ?>
+
+                    <li class="team-card__item"><?php echo $value; ?></li>
+
+              <?php
+                }
+                unset($value); // break the reference with the last element
+              ?>
+
               </ul>
             </div>
           </div>
@@ -75,14 +85,19 @@
               </h5>
               <hr class="team-card__hr team-card__hr--orange">
               <ul class="team-card__list">
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
-                <li class="team-card__item">Nome Sobrenome</li>
+
+              <?php $alunosArray = explode(",", get_field('equipe_do_projeto')['alunos']);
+
+                foreach ($alunosArray as $value) {
+              ?>
+
+                    <li class="team-card__item"><?php echo $value; ?></li>
+
+              <?php
+                }
+                unset($value); // break the reference with the last element
+              ?>
+
               </ul>
             </div>
           </div>
