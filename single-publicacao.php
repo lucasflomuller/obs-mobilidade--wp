@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
+<?php if (have_posts()):
+				while( have_posts()): the_post();
+			?>
 
 <header class="downloads-header">
     <div class="row">
 
       <div class="col-2-of-3">
         <h3 class="heading-quinary u-font-size-medium u-text-primary-light u-margin-bottom-small">
-          Publicações
+          <?php the_title(); ?>
         </h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam sapiente deserunt excepturi. Ducimus quae
-          rem
-          nihil numquam blanditiis quisquam.
+          <?php the_excerpt(); ?>
         </p>
       </div>
 
@@ -47,8 +48,10 @@
         </header>
 
         <section class="downloads__content">
+
           <ul class="downloads__list">
-            <li class="downloads__item">
+          <?php //the_field('conteudo'); ?>
+          <!-- <li class="downloads__item">
               <span class="icon downloads__icon"></span>
               Apresentações de xx/xx/2017 a xx/xx/2018
               <ul class="downloads__list downloads__list--nested">
@@ -153,7 +156,7 @@
                   Download 06 - Lorem ipsum dolor sit amet
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </section>
       </div>
@@ -184,6 +187,10 @@
       </div>
     </div>
   </section>
+
+
+<?php endwhile;
+      endif; ?>
   
 
 <?php get_footer(); ?>
