@@ -49,8 +49,8 @@
 
         <section class="downloads__content">
 
-          <ul class="downloads__list">
-          <?php //the_field('conteudo'); ?>
+          <!-- <ul class="downloads__list"> -->
+          <?php the_field('conteudo'); ?>
           <!-- <li class="downloads__item">
               <span class="icon downloads__icon"></span>
               Apresentações de xx/xx/2017 a xx/xx/2018
@@ -157,7 +157,7 @@
                 </li>
               </ul>
             </li> -->
-          </ul>
+          <!-- </ul> -->
         </section>
       </div>
     </div>
