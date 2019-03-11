@@ -162,7 +162,7 @@
 
   <section class="section-relacionados">
     <div class="row">
-      <img src="<?php echo get_template_directory_uri() . 'img/backgrounds/bg-8.svg' ?>" alt="Graph layout" class="section-relacionados__image"> 
+      <img src="<?php echo get_template_directory_uri() . '/img/backgrounds/bg-8.svg' ?>" alt="Graph layout" class="section-relacionados__image"> 
       <div class="relacionados">
         <p class="relacionados__title">
           Projetos relacionados:
