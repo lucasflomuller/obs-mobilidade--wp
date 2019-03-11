@@ -118,9 +118,62 @@ function faba_custom_admin_titles( $title, $post_id ) {
           $fname = get_field('nome', $post_id );
           $output = $fname;
           break;
+       case 'projeto':
+          $fname = get_field ('title', $post_id)   ;
+          $output = $fname;
+          break;
     }
  endif;
  return $output;
 }
 add_filter('the_title', 'faba_custom_admin_titles', 99, 2);
+
+function projeto_column_headers($columns){
+
+  //creating custom column header data
+  $columns = array(
+    'cb'=>'<input type="checkbox"/>',
+    'data_de_inicio'=>__('Data  de início'),
+    'status'=>__('Status'),
+    'coordenador'=>__('Coordenador'),
+    'recursos'=>__('Recursos'),
+  );
+
+  //returning new columns
+  return $columns;
+}
+add_filter('manage_edit-projeto_columns','projeto_column_headers');
+
+
+function projeto_column_data( $column, $post_id ) {
+  // setup our return text
+  $output = '';
+  switch( $column ) {
+     
+     case 'data_de_inicio':
+        // get the custom name data
+        $data_de_inicio = get_field('data_de_inicio', $post_id );
+        $output .= $data_de_inicio;
+        break;
+     case 'status':
+        // get the custom email data
+        $status = get_field('status', $post_id );
+        $output .= $status;
+        break;
+     case 'coordenador':
+        // get the custom email data
+        $coordenador = get_field('coordenador', $post_id );
+        $output .= $coordenador;
+        break; 
+        case 'recursos':
+        // get the custom email data
+        $recursos = get_field('recursos', $post_id );
+        $output .= $recursos;
+        break; 
+        
+  }
+  // echo the output
+  echo $output;
+}
+add_filter('manage_staff_posts_custom_column','faba_staff_column_data',1,2);
 
