@@ -1,10 +1,10 @@
 <!-- PROJECT CARD INIT -->
 <div class="project-card">
         <input id="<?php echo get_the_ID(); ?>"   type="checkbox" class="project-card__checkbox">
-        <label for="<?php echo get_the_ID(); ?>" class="project-card__more-button u-text-orange">Saiba mais <i class="fas fa-angle-down"></i></label>
+        <label for="<?php echo get_the_ID(); ?>" class="project-card__more-button">Saiba mais <i class="fas fa-angle-down"></i></label>
 
         <div class="project-card__head-left">
-          <h2 class="heading-tertiary u-text-orange">
+          <h2 class="heading-tertiary">
             <?php the_field('titulo'); ?>
 		  </h2>
         </div>

@@ -3,6 +3,7 @@
       <h3 class="heading-tertiary u-text-white u-margin-bottom-small">
         Nossos projetos
       </h3>
+      <div class="project-card__container">
         <?php
 
         $projects = new WP_Query ('post_type=projeto&posts_per_page=0');
@@ -18,7 +19,8 @@
 
         ?>
 
-       
       </div>
+
+    </div>
 
   </section>  
