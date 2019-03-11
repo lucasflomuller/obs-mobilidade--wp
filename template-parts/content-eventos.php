@@ -1,7 +1,8 @@
 <li class="events-list__item">
   <p class="events-list__date">
-    <span class="events-list__date--day"> 29/09 </span>
-    <span class="events-list__date--year"> <?php the_field('data') ?> </span>
+  <?php $dateArray = explode("/", get_field('data')); ?>
+    <span class="events-list__date--day"> <?php echo $dateArray[0] . "/" . $dateArray[1]; ?> </span>
+    <span class="events-list__date--year"> <?php echo end($dateArray); ?> </span>
   </p>
   <div class="events-list__description lead-text--secondary">
     <p class="events-list__description--text">

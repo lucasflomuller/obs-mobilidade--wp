@@ -20,10 +20,9 @@
   <?php 
 
     $args = array(
-      'post_type' => 'post',
+      'post_type' => 'publicacao',
       'posts_per_page' => '4',
-      'category_name' => 'publicacoes'
-    );
+     );
 
     $publicacoes = new WP_Query($args);
 
