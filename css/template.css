@@ -343,6 +343,7 @@ body {
       transform: translateY(0.5rem); }
   .events-list__item {
     display: table;
+    width: 100%;
     padding: 2rem 4rem;
     cursor: pointer; }
     .events-list__item:hover {

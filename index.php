@@ -4,7 +4,7 @@
   <div class="row u-margin-bottom-zero-tab-port">
     <div class="col-2-of-3">
       <h1 class="heading-secondary u-margin-bottom-small">
-        Observatório de Mobilidade Urbana UFSC
+        Observatório da Mobilidade Urbana UFSC
       </h1>
       <p class="u-margin-bottom-big">
       Bem-vindo(a) à página do Observatório da Mobilidade Urbana UFSC. Somos um grupo aberto, destinado à
@@ -41,7 +41,7 @@
       <h3 class="heading-tertiary u-margin-bottom-xbig">
         Saiba mais sobre o projeto de Transporte Integrado Metropolitano
       </h3>
-      <p class="lead-text--primary">
+      <p class="lead-text--primary" style="font-size:1.4rem;">
       Desde 2014 pesquisadores da UFSC participam do processo de reestruturação do transporte coletivo
 da região metropolitana da Grande Florianópolis, contribuindo com o Plano de Mobilidade Urbana
 Sustentável da Grande Florianópolis (PLAMUS). Em 2016, o grupo decidiu criar o Observatório da
