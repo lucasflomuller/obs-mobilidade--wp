@@ -19,14 +19,14 @@
       Encontre aqui mais informações sobre a origem do Observatório, principais atividades desenvolvidas e dados
       de contato.
       </p>
-      <a href="#" class="btn btn--primary-outline">Saiba mais sobre o observatório</a>
+      <a href="<?php echo get_page_link(8); ?>" target="_blank" class="btn btn--primary-outline">Saiba mais sobre o observatório</a>
     </div>
     <div class="col-1-of-3">
       <p class="lead-text--secondary">
       Textos produzidos pela equipe do Observatório, consistindo de relatórios e dados de projetos, publicações
       acadêmicas e artigos de opinião.
       </p>
-      <a href="#" class="btn btn--primary-outline">Conheça nossa biblioteca</a>
+      <a href="<?php echo get_page_link(10); ?>" target="_blank" class="btn btn--primary-outline">Conheça nossa biblioteca</a>
     </div>
   </div>
 </header>
