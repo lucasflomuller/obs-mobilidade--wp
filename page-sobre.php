@@ -34,7 +34,7 @@
 
         
         <h3 class="heading-tertiary u-margin-bottom-medium">
-          Acesse nossos conteúdos produzidos pelo Observatório
+          Acesse nossos conteúdos </br> produzidos pelo Observatório
         </h3>
         <p class="lead-text--primary u-margin-bottom-medium">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas nihil architecto, perferendis sequi debitis rerum cumque dolores nesciunt officia autem mollitia odio incidunt error ducimus, dignissimos esse non fugit?
