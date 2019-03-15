@@ -942,7 +942,8 @@ body {
       .footer__partners ul li:first-child {
         margin-bottom: 1rem; }
     .footer__partners--image {
-      width: 86%; }
+      width: 73%;
+      margin-top: 16%; }
       @media (max-width: 37.5em) {
         .footer__partners--image {
           display: none; } }
