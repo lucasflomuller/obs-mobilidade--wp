@@ -14,17 +14,17 @@
         </div>
       </div>
       <div class="col-3-of-4">
-        <div class="footer__partners">
+        <a href="https://ufsc.br/" target="_blank" class="footer__partners">
           <img class="footer__partners--image" src="<?php echo get_template_directory_uri() . '/img/brand/logo-ufsc.svg' ?>" alt="Ufsc logo">
-        </div>
+        </a>
         <div class="footer__contact">
           <ul>
             <li>
-              <a href="www.instagram.com">
+              <a href="http://www.instagram.com">
                 <i class="fab fa-instagram"></i>
               </a>
               &nbsp;
-              <a href="www.facebook.com">
+              <a href="https://www.facebook.com/observatoriodamobilidade/">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
