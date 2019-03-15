@@ -11,8 +11,6 @@
 
         <div class="project-card__head-right">
           <p class="lead-text--secondary">
-            <b>Início:</b> <?php the_field('data_de_inicio') ?> <br>
-            <b>Status:</b> <?php the_field('status') ?> <br>
             <span>
               <b>Coordernador:</b> <?php the_field('coordenador') ?> <br>
               <b>Recursos:</b> <?php the_field('recursos') ?> <br>
