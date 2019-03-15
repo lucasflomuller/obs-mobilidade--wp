@@ -35,7 +35,7 @@
               <h5 class="team-card__title">
                 Professores
               </h5>
-              <hr class="team-card__hr team-card__hr--orange">
+              <hr class="team-card__hr">
               <ul class="team-card__list">
 
               <?php $professoresArray = explode(",", get_field('equipe_do_projeto')['professores']);
@@ -58,7 +58,7 @@
               <h5 class="team-card__title">
                 Pesquisadores
               </h5>
-              <hr class="team-card__hr team-card__hr--orange">
+              <hr class="team-card__hr">
               <ul class="team-card__list">
 
               <?php $pesquisadoresArray = explode(",", get_field('equipe_do_projeto')['pesquisadores']);
@@ -81,7 +81,7 @@
               <h5 class="team-card__title">
                 Alunos da Graduação
               </h5>
-              <hr class="team-card__hr team-card__hr--orange">
+              <hr class="team-card__hr">
               <ul class="team-card__list">
 
               <?php $alunosArray = explode(",", get_field('equipe_do_projeto')['alunos']);
