@@ -36,15 +36,6 @@
           <h3 class="heading-quinary u-font-size-medium u-text-primary-light downloads__title">
             APRESENTAÇÕES
           </h3>
-          <span class="u-text-primary-light"><small><b>
-            VEJA TAMBÉM:
-          </b></small></span>
-          <a href="#" class="btn btn--primary-light-outline">
-            Relatórios
-          </a>
-          <a href="#" class="btn btn--primary-light-outline">
-            Microdados
-          </a>
         </header>
 
         <section class="downloads__content">
@@ -179,9 +170,6 @@
           </a>
           <a href="#" class="btn btn--purple-outline relacionados__btn">
             Estudos anteriores
-          </a>
-          <a href="#" class="btn btn--blue-sea-outline relacionados__btn">
-            Manifestos
           </a>
         </div>
       </div>
