@@ -7,9 +7,9 @@
         </div>
         <div class="footer__navigation">
           <ul class="footer__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="publicacoes.html">Publicações</a></li>
+            <li><a href="<?php echo get_page_link( get_option('page_for_posts') ); ?>">Home</a></li>
+            <li><a href="<?php echo get_page_link( 8 ); ?>">Sobre</a></li>
+            <li><a href="<?php echo get_page_link( 10 ); ?>">Publicações</a></li>
           </ul>
         </div>
       </div>
@@ -20,11 +20,11 @@
         <div class="footer__contact">
           <ul>
             <li>
-              <a href="http://www.instagram.com">
+              <a href="http://www.instagram.com" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
               &nbsp;
-              <a href="https://www.facebook.com/observatoriodamobilidade/">
+              <a href="https://www.facebook.com/observatoriodamobilidade/" target="_blank">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>

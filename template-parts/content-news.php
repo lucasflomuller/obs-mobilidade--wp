@@ -1,5 +1,5 @@
 <article class="news-card">
-  <a href="<?php the_permalink(); ?>" class="u-no-decoration">
+  <a href="<?php the_permalink(); ?>" target="_blank" class="u-no-decoration">
     <h4 class="heading-quartiary">
       <?php the_title(); ?>
     </h4>

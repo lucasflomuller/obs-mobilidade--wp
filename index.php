@@ -48,7 +48,7 @@ Sustentável da Grande Florianópolis (PLAMUS). Em 2016, o grupo decidiu criar o
 Mobilidade Urbana que, em parceria com Governo do Estado e prefeituras, desenvolveu a proposta
 da Rede Integrada de Transporte Coletivo Metropolitano.
       </p>
-      <a href="https://onibusrmf.org" class="btn btn--primary-outline">
+      <a href="https://onibusrmf.org" target="_blank" class="btn btn--primary-outline">
       Conheça o novo sistema
       </a>
     </div>

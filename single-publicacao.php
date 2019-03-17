@@ -162,13 +162,13 @@
           Projetos relacionados:
         </p>
         <div class="relacionados__btn-list">
-          <a href="#" class="btn btn--orange-outline relacionados__btn">
+          <a href="#" target="_blank" class="btn btn--orange-outline relacionados__btn">
             Projeto neotrans
           </a>
-          <a href="#" class="btn btn--green-outline relacionados__btn">
+          <a href="#" target="_blank" class="btn btn--green-outline relacionados__btn">
             Publicações academicas
           </a>
-          <a href="#" class="btn btn--purple-outline relacionados__btn">
+          <a href="#" target="_blank" class="btn btn--purple-outline relacionados__btn">
             Estudos anteriores
           </a>
         </div>
