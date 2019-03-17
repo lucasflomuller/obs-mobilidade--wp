@@ -7,7 +7,7 @@
         </div>
         <div class="footer__navigation">
           <ul class="footer__list">
-            <li><a href="<?php echo get_page_link( get_option('page_for_posts') ); ?>">Home</a></li>
+            <li><a href="http://observamob.sites.ufsc.br/">Home</a></li>
             <li><a href="<?php echo get_page_link( 8 ); ?>">Sobre</a></li>
             <li><a href="<?php echo get_page_link( 10 ); ?>">Publicações</a></li>
           </ul>
