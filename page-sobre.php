@@ -39,7 +39,7 @@
         <p class="lead-text--primary u-margin-bottom-medium">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas nihil architecto, perferendis sequi debitis rerum cumque dolores nesciunt officia autem mollitia odio incidunt error ducimus, dignissimos esse non fugit?
         </p>
-        <a href="<?php echo get_page_link(10); ?>" class="btn btn--primary-outline">
+        <a href="<?php echo get_page_link(10); ?>" target="_blank" class="btn btn--primary-outline">
           Ver Publicações
         </a>
         
