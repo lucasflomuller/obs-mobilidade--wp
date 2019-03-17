@@ -15,27 +15,34 @@
 
   <section class="section-categories">
 
-  <?php 
+  <div class="row">
 
-    $args = array(
-      'post_type' => 'publicacao',
-      'posts_per_page' => '4',
-     );
+    <div class="news-card__colored">
 
-    $publicacoes = new WP_Query($args);
-
-    if ($publicacoes->have_posts()):
-      while($publicacoes->have_posts()): $publicacoes->the_post();
-      ?>
-
-      <?php get_template_part( 'template-parts/content', 'publicacoes' ); ?>
-    
       <?php 
-      endwhile;
-      wp_reset_postdata();
-    endif;
-    ?>
 
+        $args = array(
+          'post_type' => 'publicacao',
+          'posts_per_page' => '4',
+        );
+        
+        $publicacoes = new WP_Query($args);
+        
+        if ($publicacoes->have_posts()):
+          while($publicacoes->have_posts()): $publicacoes->the_post();
+          ?>
+
+          <?php get_template_part( 'template-parts/content', 'publicacoes' ); ?>
+        
+          <?php 
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
+
+      </div>
+
+    </div>
   </section>
 
 <?php get_footer(); ?>
