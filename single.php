@@ -28,8 +28,9 @@
 								<i class="fas fa-clock"></i> <?php echo get_the_date(); ?>
 							</p>
 							<div class="news__arrows">
-								<i class="fas fa-arrow-left"></i>
-								<i class="fas fa-arrow-right"></i>
+								<?php echo get_previous_post_link( '%link', '<i class="fas fa-arrow-left"></i>', true ); ?>
+									<!-- <i class="fas fa-arrow-left"></i> -->
+								<?php echo get_next_post_link( '%link', '<i class="fas fa-arrow-right"></i>', true ); ?>
 							</div>
 						</div>
 					</div>
