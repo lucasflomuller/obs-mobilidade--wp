@@ -723,6 +723,8 @@ body {
         content: "\f063";
         margin-right: .75rem;
         color: #067fda; }
+      .downloads__content ul .parent-item {
+        cursor: pointer; }
       .downloads__content ul .parent-item::before {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
