@@ -704,31 +704,40 @@ body {
     padding-bottom: 10rem;
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%); }
-  .downloads__list {
-    list-style: none;
-    margin-bottom: 1rem; }
-    .downloads__list--nested {
-      padding-left: 5rem; }
-      .downloads__list--nested ul {
-        padding-left: 7rem; }
-  .downloads__item {
-    padding: .5rem 0; }
-    .downloads__item--nested {
-      padding: .35rem 0; }
-      .downloads__item--nested li {
-        padding: .30rem 0; }
-  .downloads__icon::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    margin-right: .75rem;
-    color: #067fda; }
-  .downloads__icon--nested::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f063";
-    margin-right: .75rem;
-    color: #067fda; }
+    .downloads__content ul {
+      list-style: none;
+      margin-bottom: 1rem; }
+      .downloads__content ul li {
+        padding: .5rem 0; }
+      .downloads__content ul .child-item::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f063";
+        margin-right: .75rem;
+        color: #067fda; }
+      .downloads__content ul .parent-item::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        margin-right: .75rem;
+        margin-left: 0.57rem;
+        color: #067fda; }
+      .downloads__content ul .parent-item--show::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f107";
+        margin-right: .75rem;
+        margin-left: 0.57rem;
+        color: #067fda;
+        display: inline-block; }
+      .downloads__content ul li ul {
+        padding-left: 5rem; }
+        .downloads__content ul li ul li ul {
+          padding-left: 7rem; }
+          .downloads__content ul li ul li ul li ul {
+            padding-left: 9rem; }
+            .downloads__content ul li ul li ul li ul li ul {
+              padding-left: 11rem; }
   .downloads ::-webkit-scrollbar {
     display: none; }
 
