@@ -7,16 +7,18 @@ var DOMElements = {
     newsCardCarouselContainer: document.getElementById('newsCardCarouselContainer')
 };
 
-Array.from(DOMElements.checks).forEach(e => {
-    if (e) {
-        e.addEventListener("click", function () {
-            this.parentNode.classList.toggle("project-card--active")
-        })
-    }
-});
+if (DOMElements.checks) {
+    Array.from(DOMElements.checks).forEach(e => {
+        if (e) {
+            e.addEventListener("click", function () {
+                this.parentNode.classList.toggle("project-card--active")
+            })
+        }
+    });
+}
 
-for (key in DOMElements.newsCardCarousel) {
-    if (DOMElements.newsCardCarousel[key]) {
+if (DOMElements.newsCardCarousel) {
+    for (key in DOMElements.newsCardCarousel) {
         DOMElements.newsCardCarousel[key].addEventListener("click", function () {
             DOMElements
                 .newsCardCarouselContainer
