@@ -329,18 +329,26 @@ body {
   text-align: center;
   list-style: none;
   width: 100%;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 40rem;
+  overflow: hidden; }
   .events-list--arrow {
-    padding: 1rem;
     color: #223a82;
     font-size: 1.5rem;
     cursor: pointer;
     transition: transform .2s;
-    display: inline-block; }
-    .events-list--arrow:first-of-type:hover {
-      transform: translateY(-0.5rem); }
-    .events-list--arrow:last-of-type:hover {
-      transform: translateY(0.5rem); }
+    display: block;
+    text-align: center; }
+    .events-list--arrow:first-of-type {
+      padding: 1.5rem 0 0 0; }
+      .events-list--arrow:first-of-type:hover {
+        transform: translateY(-0.5rem); }
+    .events-list--arrow:last-of-type {
+      padding: 0 0 1.5rem 0; }
+      .events-list--arrow:last-of-type:hover {
+        transform: translateY(0.5rem); }
   .events-list__item {
     display: table;
     width: 100%;

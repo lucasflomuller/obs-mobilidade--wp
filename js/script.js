@@ -28,6 +28,27 @@ if (DOMElements.newsCardCarousel) {
     }
 }
 
+if ($('.events-list')) {
+    var eventsList = $('.events-list');
+
+    $('#eventListArrowUp').on('click', function () {
+        var currentScroll = eventsList.scrollTop();
+
+        eventsList.animate({
+            scrollTop: currentScroll <= 100 ? 0 : (currentScroll - 100)
+        }, 200, 'swing')
+    });
+
+    $('#eventListArrowDown').on('click', function () {
+        var currentScroll = eventsList.scrollTop();
+        var maxHeight = eventsList.height() - 100;
+
+        eventsList.animate({
+            scrollTop: currentScroll >= maxHeight ? (maxHeight + 100) : (currentScroll + 100)
+        }, 200, 'swing')
+    });
+}
+
 if ($('.downloads__content')) {
 
     $('.downloads__content li').each(function () {

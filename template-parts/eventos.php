@@ -8,12 +8,12 @@
         </p>
         </div>
       <div class="events__right">
+        <span class="events-list--arrow" id="eventListArrowUp"><i class="fas fa-arrow-up"></i></span>
         <ul class="events-list">
-          <!-- <span class="events-list--arrow"><i class="fas fa-arrow-up"></i></span> -->
 
           <?php
 
-            $eventos = new WP_Query( 'post_type=post&posts_per_page=4&post_type=evento' );
+            $eventos = new WP_Query( 'post_type=post&posts_per_page=15&post_type=evento' );
 
 
             if ($eventos->have_posts()):
@@ -32,8 +32,8 @@
           ?>
 
 
-          <!-- <span class="events-list--arrow"><i class="fas fa-arrow-down"></i></span> -->
         </ul>
+        <span class="events-list--arrow" id="eventListArrowDown"><i class="fas fa-arrow-down"></i></span>
       </div>
     </div>
   </div>
