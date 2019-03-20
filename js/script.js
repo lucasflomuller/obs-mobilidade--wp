@@ -50,12 +50,12 @@ if ($(".events-list")) {
 
   $("#eventListArrowDown").on("click", function() {
     var currentScroll = eventsList.scrollTop();
-    var maxHeight = eventsList.height() - 100;
+    var maxHeight = eventsList.height();
 
     eventsList.animate(
       {
         scrollTop:
-          currentScroll >= maxHeight ? maxHeight + 100 : currentScroll + 100
+          currentScroll + (maxHeight - 100)
       },
       200,
       "swing"
