@@ -78,8 +78,8 @@ if ($(".downloads__content")) {
         title.find("ul").hide();
 
         title.on("click", function(e) {
-          var target = $(event.target);
-          event.stopPropagation();
+          var target = $(e.target);
+          e.stopPropagation();
 
         //   if (target.children().length === 0) {
         //     return;
